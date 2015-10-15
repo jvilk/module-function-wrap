@@ -7,7 +7,7 @@ export interface IFunctionInfo {
     // The name of the namespace, e.g. "Dropbox.Client"
     namespaceName: string;
     // The original function, e.g. "Dropbox.Client.readFile"
-    originalFcn: any;
+    originalFcn: Function;
     // The original function name, e.g. "readFile".
     originalFcnName: string;
 }
