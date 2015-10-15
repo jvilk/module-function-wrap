@@ -18,6 +18,9 @@ The options to this function are as follows:
     * **namespaceName: String**: A string name for the namespace of the function, e.g. "Dropbox.Client"
     * **originalFcn: Function**: The original, non-wrapped function, e.g. Dropbox.Client.readFile
     * **originalFcnName: String**: The original function name, e.g. "readFile";
+  * **args: Arguments object**: The arguments passed to the function.
+  * **isConstructor: Boolean**: True if the function was called with the `new` keyword, false otherwise.
+  * **callingFcn: Function**: The caller of your wrapping function. Useful if you wish to trim stack traces passing through your wrapper.
 * (Optional) **objectName: String**: The name for the object, e.g. "Dropbox". Used to construct "namespaceName".
 * (Optional) **shouldAttachWrappersToObject: Boolean**: Determines if wrapper should return a new object, or place wrappers on the original object. Defaults to false.
 
