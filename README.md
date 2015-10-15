@@ -1,2 +1,2 @@
-# module-function-wrap
-Wraps all of a module's functions in a wrapper of your choosing.
+# object-wrapper
+> Wraps all of an object's functions in a wrapper of your choosing.
