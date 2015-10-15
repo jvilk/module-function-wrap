@@ -41,7 +41,7 @@ function construct(constructor, args) {
     F.prototype = constructor.prototype;
     return new F();
 }
-var wrappedAssert = wrapper(require('assert'), function (fcnInfo, args, isConstructor) {
+var wrappedAssert = wrapper(require('assert'), function (funcInfo, args, isConstructor) {
     try {
         if (!isConstructor) {
             return funcInfo.originalFcn.apply(funcInfo.namespace, args);
