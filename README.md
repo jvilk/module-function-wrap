@@ -59,5 +59,4 @@ var wrappedAssert = wrapper(require('assert'), function (fcnInfo, args, isConstr
 
 ### Limitations
 
-Currently limited to wrapping objects without prototypes, and functions that are not constructors.
-These limitations are not unsurmountable, and may be addressed in a future update (and I welcome PRs!).
+Does not wrap functions on the prototype of the passed-in function. The prototype must be wrapped separately.
