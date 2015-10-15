@@ -2,9 +2,12 @@
     "compilerOptions": {
         "target": "ES3",
         "noImplicitAny": true,
-        "module": "umd"
+        "module": "umd",
+        "declaration": true,
+        "sourceMap": true
     },
     "files": [
-        "index.ts"
+        "index.ts",
+        "interfaces.ts"
     ]
 }

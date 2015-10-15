@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "Wraps all of an object's functions in a wrapper of your choosing.",
   "main": "index.js",
+  "typings": "index",
   "scripts": {
     "prepublish": "./node_modules/.bin/tsc"
   },
