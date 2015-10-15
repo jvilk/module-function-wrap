@@ -1,6 +1,6 @@
 {
   "name": "object-wrapper",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Wraps all of an object's functions in a wrapper of your choosing.",
   "main": "index.js",
   "typings": "index",

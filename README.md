@@ -1,4 +1,4 @@
-# object-wrapper v0.1.0
+# object-wrapper v0.1.1
 > Wraps all of an object's functions in a wrapper of your choosing.
 
 ### API
