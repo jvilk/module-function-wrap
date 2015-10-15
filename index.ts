@@ -1,6 +1,6 @@
 import { IFunctionInfo } from "./interfaces";
 
-export = function wrapObject(obj: any, wrapper: (functionInfo: IFunctionInfo, args: IArguments, isConstructor: boolean, callingFcn: Function) => any, objName: string = 'root', modifyObj: boolean = false, callingFcn: Function): any {
+export = function wrapObject(obj: any, wrapper: (functionInfo: IFunctionInfo, args: IArguments, isConstructor: boolean, callingFcn: Function) => any, objName: string = 'root', modifyObj: boolean = false): any {
     if (typeof(obj) !== 'object' && typeof(obj) !== 'function') {
         throw new Error(`Erroneous argument of type ${typeof(obj)}. object-wrapper only wraps objects or functions.`);
     }
