@@ -4,12 +4,12 @@ export = function wrapObject(obj: any, wrapper: (functionInfo: IFunctionInfo, ar
     if (typeof(obj) !== 'object' && typeof(obj) !== 'function') {
         throw new Error(`Erroneous argument of type ${typeof(obj)}. object-wrapper only wraps objects or functions.`);
     }
-    var wrappedObj: any = modifyObj ? obj : (typeof(obj) === 'function' ? function() {
+    let wrappedObj: any = modifyObj ? obj : (typeof(obj) === 'function' ? function(this: any) {
         return wrapper({
-         namespace: obj,
-         namespaceName: objName,
-         originalFcn: obj,
-         originalFcnName: objName
+            namespace: obj,
+            namespaceName: objName,
+            originalFcn: obj,
+            originalFcnName: objName
         }, arguments, this instanceof wrappedObj, wrappedObj);
     } : {});
     // Avoid items on the prototype.
@@ -21,7 +21,7 @@ export = function wrapObject(obj: any, wrapper: (functionInfo: IFunctionInfo, ar
                 originalFcn: obj[name],
                 originalFcnName: name
             };
-            wrappedObj[name] = function() {
+            wrappedObj[name] = function(this: any) {
                 return wrapper(funcInfo, arguments, this instanceof wrappedObj[name], wrappedObj[name]);
             };
         } else {

@@ -2,7 +2,9 @@
     "compilerOptions": {
         "target": "ES3",
         "noImplicitAny": true,
-        "module": "umd",
+        "noUnusedLocals": true,
+        "noImplicitThis": true,
+        "module": "commonjs",
         "declaration": true,
         "sourceMap": true
     },
