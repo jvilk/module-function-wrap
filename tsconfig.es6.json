@@ -1,13 +1,13 @@
 {
     "compilerOptions": {
-        "target": "es5",
+        "target": "es2015",
         "noImplicitAny": true,
         "noUnusedLocals": true,
         "noImplicitThis": true,
-        "module": "commonjs",
+        "module": "es2015",
         "declaration": true,
         "sourceMap": true,
-        "outDir": "js/cjs"
+        "outDir": "js/es6"
     },
     "include": ["ts/**/*.ts"]
 }

@@ -1,4 +1,4 @@
-# object-wrapper v0.2.0
+# object-wrapper v1.0.0
 > Wraps all of an object's functions in a wrapper of your choosing.
 
 ### API
@@ -31,7 +31,7 @@ The function returns the wrapped object.
 Wrap the [`assert`](https://github.com/defunctzombie/commonjs-assert) library to appropriately throw exceptions through the [Mocha](https://mochajs.org/) test runner:
 
 ```{js}
-var wrapper = require('object-wrapper');
+var wrapper = require('object-wrapper').default;
 var mocha = require('mocha');
 // Permits calling a constructor via fcn.apply.
 function construct(constructor, args) {
