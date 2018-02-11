@@ -1,10 +1,10 @@
 {
   "name": "object-wrapper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Wraps all of an object's functions in a wrapper of your choosing.",
   "main": "js/cjs/index.js",
   "module": "js/es6/index.js",
-  "typings": "index",
+  "typings": "js/es6/index",
   "scripts": {
     "prepare": "tsc && tsc -p tsconfig.es6.json"
   },
